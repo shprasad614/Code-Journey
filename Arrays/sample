@@ -1,0 +1,23 @@
+public class sample {
+    public static void main(String[] args) {
+        int largest = 0;
+        int sec_largest= -1;
+        int arr[]={90,90,80,80,60};
+        for(int i =1 ;i<arr.length;i++)
+        {
+            if(arr[i]>arr[largest])
+            {
+                sec_largest=largest;
+                largest=i;
+            }
+            else if(sec_largest==-1 || arr[i] >arr[sec_largest])
+            {
+                sec_largest= i;
+            }
+        }
+        
+        System.out.println(arr[largest] +" " + arr[sec_largest]);
+
+    }
+}
+       
